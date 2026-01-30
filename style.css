@@ -1,0 +1,461 @@
+/* 1. Global Reset & Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a237e; 
+}
+
+/*  2. Header and Navigation  */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; 
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    transition: all 0.5s;
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+    color: rgb(79, 2, 2);
+    background: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: brown; 
+}
+
+
+/*  3. Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: brown; 
+    color: white;
+    border: 2px solid brown;
+}
+
+.btn-primary:hover {
+    background-color: #9b3c09;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #9b3c09;
+    border: 2px solid #852908;
+}
+
+.btn-secondary:hover {
+    background-color: #682904;
+    color: white;
+}
+
+
+/*  4. Hero Section  */
+.hero {
+    background: url('DJI_0735-Copy-scaled-1500x1000.jpg') no-repeat center center/cover; 
+    background-color: #562104;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    height: 40vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: #f4f4f9;
+}
+
+
+/*  5. About & General Sections */
+section {
+    padding: 60px 0;
+}
+
+.about {
+    background-color: #f4f3f3;
+}
+
+.about h3, .programs h3 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    position: relative;
+    color:#852908
+}
+
+.about h3::after, .programs h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #862e06;
+    margin: 10px auto 0;
+}
+
+.about-flex {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-text h1{
+    color: #852908;
+}
+
+.placeholder-image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+
+/* 6. Programs Section */
+.programs {
+    background-color: #e8eaf6; 
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.program-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.program-card h4 {
+    color: #5a2303;
+    margin-top: 0;
+}
+
+
+/* 7. Footer  */
+footer {
+    background-color: #5e2603;
+    color: white;
+    padding-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-info h4 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff6f00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #602104;
+    font-size: 0.9em;
+}
+
+
+/* 8. Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-links a {
+        margin: 0 10px;
+    }
+
+
+}
+
+
+
+@media (max-width: 992px) {
+  .admissions .deadlines-card .deadlines-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .admissions .deadlines-card .deadlines-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.admissions .deadlines-card .deadline-item {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  transition: all 0.3s ease;
+}
+
+.admissions .deadlines-card .deadline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.admissions .deadlines-card .deadline-item .deadline-date {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.8rem;
+}
+
+.admissions .deadlines-card .deadline-item h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.admissions .deadlines-card .deadline-item p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.admissions .campus-visit {
+  padding-bottom: 1rem;
+}
+
+.admissions .campus-visit .visit-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.admissions .campus-visit .visit-image img {
+  border-radius: 10px;
+}
+
+.admissions .campus-visit .visit-image .image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 30%);
+  color: var(--contrast-color);
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.admissions .campus-visit .visit-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+@media (max-width: 992px) {
+  .admissions .campus-visit .visit-content {
+    margin-top: 2rem;
+    padding: 0;
+  }
+}
+
+.admissions .campus-visit .visit-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.admissions .campus-visit .visit-content p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+
+.admissions .campus-visit .visit-content .visit-options {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.admissions .campus-visit .visit-content .visit-options li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.admissions .campus-visit .visit-content .visit-options li i {
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.admissions .campus-visit .visit-content .btn-schedule {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.admissions .campus-visit .visit-content .btn-schedule:hover {
+  background-color: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%);
+  transform: translateY(-3px);
+}
+
+.admissions .campus-visit .visit-content .virtual-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admissions .campus-visit .visit-content .virtual-option span {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.admissions .campus-visit .visit-content .virtual-option .virtual-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.admissions .campus-visit .visit-content .virtual-option .virtual-link i {
+  transition: 0.3s ease;
+}
+
+.admissions .campus-visit .visit-content .virtual-option .virtual-link:hover i {
+  transform: translateX(5px);
+}
+
+

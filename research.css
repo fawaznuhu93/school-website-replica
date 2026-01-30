@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+      font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a237e; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a237e; 
+}
+
+/* --- 2. Header and Navigation --- */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative; 
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    transition: all 0.5s;
+}
+
+.logo {
+    font-size: 1.8em;
+    margin: 0;
+    color: rgb(79, 2, 2);
+    background: var(--accent-color);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: brown; 
+}
+
+.university-info p {
+    font-size: 10px;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Admissions Section */
+.admissions-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.admissions-section h1 {
+    color: #251702;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.admissions-section h2,
+.admissions-section h3 {
+    color: #813e07;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.admissions-section ul {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.admissions-section li {
+    margin-bottom: 15px;
+}
+
+/* Two Column Layout */
+.admissions-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.main-column {
+    flex: 1;
+}
+
+.sidebar-column {
+    flex: 1;
+}
+
+.sidebar-column .image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.sidebar-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar-column img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    background-color: #251702;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+}
